@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+body {
+	/* color: rgba(255, 0, 0, 0.1); */
+	font-family: 'Montez', cursive;
+	font-size: 14px;
+	line-height: 24px; 
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montez', cursive;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+a {
+	/* color: red; */
+	/* text-decoration: none; */
+}
+/* .advance-heading::before {
+	content: "";
+	background-color: #0dad8d;
+	display: inline;
+	height: 5px;
+	width: 70px;
+	position: absolute;
+	top: 42%;
+	left: 47%;
+} */
+.text-bold {
+	font-family:'Montez', cursive ;
+	font-weight: 700;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+a:hover,
+a:focus {
+	/* color: red; */
+}
+
+a:visited {
+	/* color: green; */
+}
+
+a:visited:hover {
+	/* color: orange; */
+}
+
+.clear:after,
+.container:after,
+.row:after {
+	content: "";
+	clear: both;
+	display: table;
+	width: 100%;
+}
+
+.container {
+	/* border: 1px solid yellow; */
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+/* ID Selector */
+/* #square {
+	color: green;
+	font-size: 36px;
+} */
+
+/* Class Selector */
+/* .square {
+	color: orange;
+	font-size: 14px;
+} */
+
+/* Name Selector */
+/* div {
+	color: blue;
+	font-size: 26px;
+} */
+
+.header {
+    background-image: url("../img/intro-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	/* height: 675px; */
+}
+.overlay{
+    background: rgba(0,0,0,0.65);
+    color: #666;
+    display: block;
+	margin: 0;
+	left: 0;
+	right: 0;
+	bottom: 40%;
+	transition: 0.5s ease;
+}
+.menu-navbar{
+   
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+	font-family: 'Montez', cursive;
+	font-size: 12px;
+	padding: 35px 0;
+}
+
+.navbar-logo{
+    font-size: 36px;
+    text-decoration: none;
+    color: #c3a553;
+    line-height: 12px;
+    font-family: 'Montez', cursive;
+}
+
+.navbar * {
+	vertical-align: middle;
+}
+
+
+.navbar .menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: right;
+}
+
+.navbar .menu li {
+	float: left;
+}
+
+.navbar .menu li:not(:first-child) {
+	margin-left: 25px;
+}
+
+.navbar .menu a {
+    color: #c3a553;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+    transition: all ease-in-out 0.2s;
+    margin: 10px 20px 0 20px;
+    padding: 6px 2px;
+ 
+    
+    
+}
+.navbar .menu a:hover {
+    text-decoration: underline;
+    border-bottom: 2px solid #363636;
+      
+}
+
+.header .text-block {
+	font-size: 28px;
+	text-align: center;
+    color: #fff;
+    margin: 130px;
+    padding: 160px 20px;
+    font-family: 'Montez';
+}
+.header .text-block h1{
+    font-size: 100px;
+}
+.header .text-block p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+
+}
+.header .text-block .small{
+  color: rgba(255,255,255,0.85);  
+  font-size: 14px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+ 
+
+}
+
+.header .btn {
+	margin-top: 130px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #a18530;
+	cursor: pointer;
+	display: inline-block;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+	height: 50px;
+	margin: 0;
+	min-width: 120px;
+	padding: 12px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+    transition: all ease-in-out 0.2s;
+    margin-bottom: 20px;
+}
