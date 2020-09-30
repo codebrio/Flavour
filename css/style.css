@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
 body {
 	/* color: rgba(255, 0, 0, 0.1); */
-	font-family: 'Montez', cursive;
+	/* font-family: 'Montez', cursive; */
 	font-size: 14px;
 	line-height: 24px; 
 	margin: 0;
@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Montez', cursive;
+	/* font-family: 'Montez', cursive; */
 	font-weight: 400;
 }
 
@@ -58,7 +58,7 @@ a {
 	/* color: red; */
 	/* text-decoration: none; */
 }
- .advance-heading::before {
+ .advance-heading-left::before {
 	content: "";
 	background-color: #c3a553;
 	display: inline;
@@ -68,7 +68,7 @@ a {
 	top: 47%;
 	left: 15%;
 } 
-.advance-heading1::after {
+.advance-heading-right::after {
 	content: "";
 	background-color: #c3a553;
 	display: inline;
@@ -77,6 +77,36 @@ a {
 	position: absolute;
 	top: 47%;
 	left: 51.5%;
+}
+.advance-heading-center::after {
+	content: "";
+	background-color: #c3a553;
+	display: inline;
+	height: 2px;
+	width: 70px;
+	position: absolute;
+	top: 150%;
+	left: 48%;
+}
+.advance-heading-center-team::after {
+	content: "";
+	background-color: #c3a553;
+	display: inline;
+	height: 2px;
+	width: 50px;
+	position: absolute;
+	top: 170%;
+	left: 47.7%;
+}
+.advance-heading-contact::after {
+	content: "";
+	background-color: #c3a553;
+	display: inline;
+	height: 1.5px;
+	width: 60px;
+	position: absolute;
+	top: 42%;
+	left: 41%;
 }
 .text-bold {
 	font-family:'Montez', cursive ;
@@ -216,8 +246,9 @@ a:visited:hover {
 	text-align: center;
     color: #fff;
     margin: 130px;
-    padding: 160px 20px;
+    padding: 0px 20px;
     font-family: 'Montez';
+    height: 300px !important;
 }
 .header .text-block h1{
     font-size: 100px;
@@ -332,3 +363,271 @@ a:visited:hover {
     padding-right: 8%;
     padding-bottom: 5%;
 }
+.gallery{
+    background:#222 ;
+
+}
+.gallery .container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.gallery .text-block{
+    padding: 10px;
+
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.gallery h2{
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+}
+.gallery p{
+    color: #888;
+    font-size: 17px;
+}
+.category{
+
+    padding: 0;
+    text-align: center;
+    
+}
+.category .cat-menu{
+    text-decoration: none;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.cat-menu li{
+    display: inline-block;
+    margin: 20px;
+}
+.category .btn-gallery{
+    text-decoration: none;
+    color: #888;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.category .btn-gallery:hover{
+    color: #c3a553;
+    text-decoration: underline;
+    text-decoration-color:#888;
+}
+
+.gallery-gird{
+    margin-top: 30px;
+
+}
+.gallery-gird .row {
+	margin: 0 -15px;
+}
+.gallery-gird .col {
+	float: left;
+	padding: 0 15px;
+	width: 25%;
+}
+
+.gallery-gird .thumbnail {
+	cursor: pointer;
+	line-height: 0;
+	margin: 15px 0;
+	position: relative;
+}
+.gallery-gird .thumbnail img {
+	border-radius: 0;
+    width: 100%;
+    height: auto;
+    
+}
+.gallery-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	height: 100%;
+	padding: 30px 15px;
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 0.5s ease;
+	width: 100%;
+}
+
+.Gallery-overlay h4{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.Gallery-overlay span {
+    display: block;
+	margin: 0;
+    position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 40%;
+	transition: 0.5s ease;
+}
+
+/* Sibling Selector */
+.gallery-overlay h4:hover + span {
+	color: greenyellow;
+}
+.gallery-gird .thumbnail:hover .gallery-overlay {
+	opacity: 1;
+}
+.gallery-gird .thumbnail:hover h4 {
+	bottom: 50%;
+	margin-bottom: 10px;
+}
+.team .container{
+   margin-top: 100px;
+    
+}
+.team .text-block{
+text-align: center;
+    
+}
+.team .text-block h2{
+    position: relative;
+}
+.team-gallery{
+    max-width: 100%;
+    padding: 25px;
+    margin: 30px;
+    text-align: center;
+    
+
+}
+.team-gallery .team-image{
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+    padding-top: 20px;
+    padding: 20px auto;
+
+}
+.team-image .caption{
+   text-align: center;
+}
+.team-image .caption h3{
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #333333 ;
+
+}
+.team-image .caption p{
+    color: #33333b;
+    margin: 10px;
+    font-size: 13px;
+    padding: 0 28px;
+    justify-content: center;
+    font-family: sans-serif;
+
+}
+
+.team-image img{
+    width: 280px;
+    height: 426px;
+}
+.background{
+    background: #444 url(../img/reservation-bg.jpg) bottom center no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+    height: 200px;
+    border-bottom: 1px solid #555;
+}
+.background .overlay-background{
+    padding: 63px 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: #666;
+    text-align: center;
+}
+.overlay-background h2{
+    color: #fff;
+}
+.overlay-background h2 span{
+    color: #c3a553;
+}
+/* .contact-image{
+    
+} */
+.footer{
+    padding: 50px 0 0 0;
+}
+.footer .footer-info{
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #666;
+
+}
+.footer-info .information{
+    position: relative;
+    /* min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; */
+    display: inline-block;
+    width: 30%;
+}
+.information h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.information p{
+   margin: 0 0 10px;
+   font-size: 13px;
+   line-height: 14px;
+   font-family: sans-serif;
+}
+.social-media{
+    background-color:#262626 ;
+    margin-top: 100px;
+}
+.social-media .container-fluid{
+    width: 100%;
+    height: auto;
+}
+.social-icon{
+    margin: 0;
+    margin: 0;
+}
+.social-icon ul{
+    padding: 26px;
+    text-align: center;
+    
+}
+.social-icon ul li{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+.social-icon i{
+    color: #c3a553;
+    padding: 4px;
+    font-size: 26px;
+    list-style: none;
+    text-align: center;
+}
+.social-icon i:hover{
+    color: #fff;
+}
+.social-icon p{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #444;
+    
+}
+
+
+
+
+
