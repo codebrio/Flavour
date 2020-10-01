@@ -108,6 +108,16 @@ a {
 	top: 42%;
 	left: 41%;
 }
+.advance-heading-menu::after {
+	content: "";
+	background-color: #c3a553;
+	display: inline;
+	height: 1.5px;
+	width: 60px;
+	position: absolute;
+	top: 10%;
+	left: 48.3%;
+}
 .text-bold {
 	font-family:'Montez', cursive ;
 	font-weight: 700;
@@ -553,9 +563,30 @@ text-align: center;
 .overlay-background h2 span{
     color: #c3a553;
 }
-/* .contact-image{
+
+.Call-Section .container-fluid .row{
     
-} */
+   
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.Call-Section .container-fluid .row>.col {
+    width: 100%;
+    display: flex;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.Call-Section .container-fluid .row>.col img{
+    width: 50%;
+    float: left;
+}
+.Call-Section .container-fluid .row>.col map{
+    width: 50%;
+    float: right;
+}
+
 .footer{
     padding: 50px 0 0 0;
 }
@@ -592,22 +623,19 @@ text-align: center;
     background-color:#262626 ;
     margin-top: 100px;
 }
-.social-media .container-fluid{
-    width: 100%;
-    height: auto;
-}
+
 .social-icon{
     margin: 0;
     margin: 0;
 }
 .social-icon ul{
-    padding: 26px;
+    padding: 40px;
     text-align: center;
     
 }
 .social-icon ul li{
     display: inline-block;
-    margin: 0 20px;
+    margin: 20px;
     text-align: center;
 }
 .social-icon i{
@@ -622,10 +650,124 @@ text-align: center;
 }
 .social-icon p{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     color: #444;
     
 }
+.Menu {
+    padding: 10px 0;
+    position: relative;
+ 
+}
+.backgroung-Menu {
+    background:  url(../img/menu-bg.jpg) bottom center no-repeat fixed ;
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; */
+    padding: 0;
+    height: 280px;
+    border-bottom: 1px solid #555;
+    
+}
+.overlay-background-Menu {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #666;
+    height: 280px;
+    text-align: center;
+}
+.Menu h2{
+    color: #fff;
+}
+.Menu p{
+    color: rgba(255,255,255,0.75);
+    margin-top: 10px;
+}
+.menu-card{
+    padding: 50px 200px 0px 200px;
+    margin: 100px;
+}
+.menu-card ul{
+    text-align: center;
+    list-style: none;
+    margin-top: 50px;
+}
+.menu-card ul li{
+    display: inline;
+    margin: 0 20px;
+    padding: 50px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  
+}
+.menu-card a{
+    text-decoration: none;
+    color: #666;
+}
+.menu-card a:hover{
+    color: #151515;
+    border-bottom: 2px solid #ccad52;
+    position: relative;  
+}
+.tab-content{
+    margin: 0;
+    padding: 0;
+
+}
+.tab-content .row {
+    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.tab-content .row>.col-left{
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 30px;
+    padding-left: 15px;
+    float: left;
+}
+   
+.tab-content .row>.col-right{
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 30px;
+    float: right;
+} 
+.menu-section{
+    margin: 0 0 60px 0px;
+}
+.menu-item{
+    margin: 45px 0;
+    font-size: 18px;
+
+}
+.menu-item-name{
+    font-weight: 400;
+    font-size: 17px;
+    color: #555;
+    padding-bottom: 15px;
+    border-bottom: 2px dotted rgba(0,0,0,0.15);
+
+}
+.menu-item-price{
+    float: right;
+    font-weight: 400;
+    color: #555;
+    margin-top: -40px;
+}
+.menu-item-description{
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 15px;
+    color: #666;
+}
+
+
+ 
 
 
 
